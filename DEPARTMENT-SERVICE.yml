@@ -1,2 +1,23 @@
 server:
-  port: 9002
+  port: 8001
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+    instance:
+      hostname: localhost
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgresSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=mess
+    username:
+    password:
+    driver-class-name: org.postgresql.Driver
