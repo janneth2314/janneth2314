@@ -15,9 +15,10 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgresSQLDialect
+        default_schema: mess
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=mess
-    username:
-    password:
+    url: jdbc:postgresql://localhost:5432/mess
+    username: postgres
+    password: 4dm1n
     driver-class-name: org.postgresql.Driver
+    
