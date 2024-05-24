@@ -22,5 +22,3 @@ spring:
     password: 4dm1n
     driver-class-name: org.postgresql.Driver
     
-spring.jpa.
-
