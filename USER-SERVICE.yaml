@@ -14,7 +14,7 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:postgresql://localhost:5432/mess?currentSchema=mess
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=mess
     username: postgres
     password: 4dm1n
     driver-class-name: org.postgresql.Driver
